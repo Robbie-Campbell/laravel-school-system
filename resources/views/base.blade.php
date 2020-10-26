@@ -23,7 +23,7 @@
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse justify-content-space-evenly nav-fill" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active ml-4">
                 <a class="nav-link {{Request::path() === "/" ? "active" : ""}}" href="/">Home</a>
@@ -37,33 +37,19 @@
             <li class="nav-item ml-4">
                 <a class="nav-link" href="#">Updates</a>
             </li>
-        </ul>
-        <ul class="navbar-nav form-inline my-2 my-lg-0">
-            <li class="nav-item mr-5">
+            <li class="nav-item ml-4">
                 <a class="nav-link" href="#">Login</a>
             </li>
-            <li class="nav-item mr-5">
-                <a class="nav-link" href="#">Register</a>
+            <li class="nav-item ml-4">
+                <a class="nav-link {{Request::path() === "register" ? "active" : ""}}" href="/register">Register</a>
             </li>
         </ul>
     </div>
 </nav>
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img class="d-block w-100" src="{{ asset('images/image1.jpg') }}" alt="First slide">
-        </div>
-        <div class="carousel-item">
-            <img class="d-block w-100" src="{{ asset('images/image2.jpg') }}" alt="Second slide">
-        </div>
-        <div class="carousel-item">
-            <img class="d-block w-100" src="{{ asset('images/image3.jpg') }}" alt="Third slide">
-        </div>
-    </div>
-</div>
-    @yield("content")
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-<script src="{{asset("/js/app.js")}}"></script>
-</body>
+@yield("carousel")
+@yield("content")
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <script src="{{asset("/js/app.js")}}"></script>
+    </body>
 </html>

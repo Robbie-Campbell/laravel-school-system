@@ -23,7 +23,9 @@ Route::get('/about', function () {
 });
 
 Route::get('/contact', function () {
-    $results = DB::select('select * from teacher where id = ?', [0]);
-    error_log($results[0]);
     return view('contact');
+});
+
+Route::get('/register', function () {
+    return view('register');
 });
