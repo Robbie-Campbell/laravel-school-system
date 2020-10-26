@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,9 +17,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+
 Route::get('/about', function () {
     return view('about');
 });
+
 Route::get('/contact', function () {
+    $results = DB::select('select * from teacher where id = ?', [0]);
+    error_log($results[0]);
     return view('contact');
 });
