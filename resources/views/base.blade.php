@@ -37,12 +37,26 @@
             <li class="nav-item ml-4">
                 <a class="nav-link" href="#">Updates</a>
             </li>
+            @if(\Illuminate\Support\Facades\Auth::guest())
             <li class="nav-item ml-4">
-                <a class="nav-link" href="#">Login</a>
+                <a class="nav-link {{Request::path() === "login" ? "active" : ""}}" href="/login">Login</a>
             </li>
             <li class="nav-item ml-4">
                 <a class="nav-link {{Request::path() === "register" ? "active" : ""}}" href="/register">Register</a>
             </li>
+            @else
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="{{ route('logout') }}"
+                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                        {{ __('Logout') }}
+                    </a>
+
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form>
+                </div>
+            @endif
         </ul>
     </div>
 </nav>

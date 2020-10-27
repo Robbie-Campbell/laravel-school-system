@@ -26,9 +26,14 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
-Route::get('/register', function () {
-    return view('register');
+Route::get('register', function () {
+    return view('auth/register');
 });
 
-Route::get("/register", "App\\Http\\Controllers\\RegisterController@show");
-Route::post('/register/create', "App\\Http\\Controllers\\RegisterController@create");
+Route::get("login", function(){
+    return view("auth/login");
+});
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -20,6 +20,6 @@ class RegisterController extends Controller
 
         $teacher->save();
 
-        return redirect("/");
+        return redirect("login");
     }
 }

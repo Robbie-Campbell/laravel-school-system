@@ -35,3 +35,7 @@ body{
     color:#cbd5e0;
     background-color: #333;
 }
+
+form{
+    max-width: 80vw;
+}
