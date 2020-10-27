@@ -29,3 +29,6 @@ Route::get('/contact', function () {
 Route::get('/register', function () {
     return view('register');
 });
+
+Route::get("/register", "App\\Http\\Controllers\\RegisterController@show");
+Route::post('/register/create', "App\\Http\\Controllers\\RegisterController@create");

@@ -21,7 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3f5084b6-a2f2-4d09-b3d4-a2959d0c96fd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +188,7 @@
       <workItem from="1603719687357" duration="5032000" />
       <workItem from="1603727672182" duration="19000" />
       <workItem from="1603728936368" duration="4741000" />
-      <workItem from="1603800878039" duration="5319000" />
+      <workItem from="1603800878039" duration="9744000" />
     </task>
     <servers />
   </component>
@@ -211,6 +212,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="336" y="361" key="#SQL_Dialects/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603726009197" />
+    <state x="1201" y="191" width="494" height="722" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603813300393">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="1201" y="191" width="494" height="722" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1603813300393" />
     <state x="1191" y="301" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603731601529">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -219,9 +224,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="242" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603726454012" />
-    <state x="1121" y="259" width="673" height="678" key="search.everywhere.popup" timestamp="1603810174922">
+    <state x="1121" y="259" width="673" height="678" key="search.everywhere.popup" timestamp="1603813560027">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="1121" y="259" width="673" height="678" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1603810174922" />
+    <state x="1121" y="259" width="673" height="678" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1603813560027" />
   </component>
 </project>
